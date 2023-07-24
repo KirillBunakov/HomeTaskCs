@@ -58,17 +58,64 @@
 
 // --------------------------
 
-Console.Write("Введите число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
 
-if ((num1 % 7 == 0) && (num1 % 23 == 0))
+// if ((num1 % 7 == 0) && (num1 % 23 == 0))
+// {
+//   Console.WriteLine("Yes");
+// }
+// else
+// {
+//   Console.WriteLine("No");
+// }
+
+// ------------ HomeTask
+// Задача 10 
+// int number = new Random().Next(100, 1000);
+// Console.WriteLine(number);
+// int result = number / 10 % 10;
+// Console.WriteLine(result);
+
+// Задача 13
+// int number = new Random().Next(10, 100000);
+// Console.WriteLine(number);
+
+// if ((number > 100) && (number < 1000))
+// {
+//   int result = number % 10;
+//   Console.WriteLine(result);
+// }
+// else if ((number >= 1000) && (number < 10000))
+// {
+//   int result = number / 10 % 10;
+//   Console.WriteLine(result);
+// }
+// else if (number >= 10000)
+// {
+//   int result = number / 100 % 10;
+//   Console.WriteLine(result);
+// }
+// else
+// {
+//   Console.WriteLine("Третьей цифры нет");
+// }
+
+// Задача 15
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Вы ввели чисто: {num}");
+
+if ((num == 6) || (num == 7))
 {
-  Console.WriteLine("Yes");
+  Console.WriteLine("Да, этот день выходной");
+}
+else if (num > 7)
+{
+  Console.WriteLine("Такого дня недели нет");
 }
 else
 {
-  Console.WriteLine("No");
-}
-// qq
-
-
+  Console.WriteLine("Нет, это будний день");
+};
