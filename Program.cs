@@ -48,8 +48,6 @@ Console.Write("Введите число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 int result = num1%10;
 Console.WriteLine(result);
-test
-
 
 
 
