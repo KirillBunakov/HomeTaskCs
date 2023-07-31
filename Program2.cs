@@ -103,19 +103,19 @@
 
 // Задача 15
 
-Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"Вы ввели чисто: {num}");
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"Вы ввели чисто: {num}");
 
-if ((num == 6) || (num == 7))
-{
-  Console.WriteLine("Да, этот день выходной");
-}
-else if (num > 7)
-{
-  Console.WriteLine("Такого дня недели нет");
-}
-else
-{
-  Console.WriteLine("Нет, это будний день");
-};
+// if ((num == 6) || (num == 7))
+// {
+//   Console.WriteLine("Да, этот день выходной");
+// }
+// else if (num > 7)
+// {
+//   Console.WriteLine("Такого дня недели нет");
+// }
+// else
+// {
+//   Console.WriteLine("Нет, это будний день");
+// };
