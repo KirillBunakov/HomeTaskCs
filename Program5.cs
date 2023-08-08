@@ -142,7 +142,7 @@ int length = Convert.ToInt32(Console.ReadLine());
 double[] array = new double[length];
 for (int i = 0; i < array.Length; i++)
 {
-  array[i] = new Random().NextDouble() * (0 - 99) + 99;
+  array[i] = new Random().NextDouble() * (0 - 99) + 99; // тут мне помог гугл
   Console.Write(array[i] + " ");
 }
 System.Console.WriteLine();
