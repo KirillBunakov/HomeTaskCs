@@ -161,58 +161,89 @@
 
 ////// Задание 54
 
-Console.Write("Введите первую размерность: ");
-int rows = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите первую размерность: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите вторую размерность: ");
-int colums = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите вторую размерность: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
 
-int[,] matrix = new int[rows, colums];
+// int[,] matrix = new int[rows, colums];
+// int[,] maxToMinMatrix = new int[rows, colums];
 
-void GetArray()
-{
-  for (int i = 0; i < matrix.GetLength(0); i++)
-  {
-    for (int j = 0; j < matrix.GetLength(1); j++)
-    {
-      matrix[i, j] = new Random().Next(0, 10);
-    }
-  }
-}
+// void GetArray()
+// {
+//   for (int i = 0; i < matrix.GetLength(0); i++)
+//   {
+//     for (int j = 0; j < matrix.GetLength(1); j++)
+//     {
+//       matrix[i, j] = new Random().Next(0, 10);
+//     }
+//   }
+// }
 
-void PrintArray()
-{
-  for (int i = 0; i < matrix.GetLength(0); i++)
-  {
-    for (int j = 0; j < matrix.GetLength(1); j++)
-    {
-      Console.Write(matrix[i, j] + " ");
-    }
-    Console.WriteLine();
-  }
-
-}
-
-void ChangeArray()
-{
-  int minValue = 100;
-  int temp = 0;
-  for (int i = 0; i < matrix.GetLength(0); i++)
-  {
-    for (int j = 0; j < matrix.GetLength(1); j++)
-    {
-
-    }
-  }
-
-}
+// void PrintArray()
+// {
+//   for (int i = 0; i < matrix.GetLength(0); i++)
+//   {
+//     for (int j = 0; j < matrix.GetLength(1); j++)
+//     {
+//       Console.Write(matrix[i, j] + " ");
+//     }
+//     Console.WriteLine();
+//   }
+// }
 
 
-GetArray();
-PrintArray();
-Console.WriteLine();
-ChangeArray();
-PrintArray();
+/////////// --->> сначала сделал через функцию ChangeArray() , по ней можно получить нужный ответ если запустить столько раз, чему равен colums. Затем долго думал как все таки решить правильно задачуз Ch, череangeArray2() это получилось
+
+
+// void ChangeArray()
+// {
+//   int temp = 0;
+//   for (int i = 0; i < matrix.GetLength(0); i++)
+//   {
+//     for (int j = 0; j < matrix.GetLength(1) - 1; j++)
+//     {
+//       if (matrix[i, j] < matrix[i, j + 1])
+//       {
+//         temp = matrix[i, j];
+//         matrix[i, j] = matrix[i, j + 1];
+//         matrix[i, j + 1] = temp;
+//       }
+//     }
+//   }
+// }
+
+
+// void ChangeArray2()
+// {
+//   for (int i = 0; i < matrix.GetLength(0); i++)
+//   {
+//     for (int j = 0; j < matrix.GetLength(1); j++)
+//     {
+//       for (int k = 0; k < matrix.GetLength(1) - 1; k++)
+//       {
+//         if (matrix[i, k] < matrix[i, k + 1])
+//         {
+//           int temp = matrix[i, k + 1];
+//           matrix[i, k + 1] = matrix[i, k];
+//           matrix[i, k] = temp;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// GetArray();
+// PrintArray();
+// Console.WriteLine();
+// ChangeArray2();
+// PrintArray();
+
+
+
+
+
 
 ///////////// Задание 56
 
